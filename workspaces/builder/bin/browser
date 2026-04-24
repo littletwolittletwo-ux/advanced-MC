@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Builder's browser — DEV SCOPE. Can interact with UI, but destructive
+# actions and production domains are policy-denied.
+exec agent-browser \
+  --session builder \
+  --profile "$HOME/.agent-browser/profiles/builder" \
+  --allowed-domains "localhost,127.0.0.1,*.vercel.app,*.ngrok.io,*.ngrok-free.app" \
+  --content-boundaries \
+  --max-output 40000 \
+  --action-policy "$HOME/.openclaw/workspace-builder/reference/browser-policy.json" \
+  "$@"

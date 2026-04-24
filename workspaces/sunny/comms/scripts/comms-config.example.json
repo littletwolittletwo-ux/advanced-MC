@@ -1,0 +1,18 @@
+{
+  "api_url": "https://agent-comms-api-production-fd99.up.railway.app",
+  "api_key": "${BUS_API_KEY}",
+  "agent_id": "sunny",
+  "agent_name": "Sunny - Master VA",
+  "message_bus_url": "https://agent-comms-api-production-fd99.up.railway.app",
+  "channels": {
+    "primary": "dm:sunny-claudia",
+    "all": [
+      "dm:sunny-builder",
+      "dm:sunny-claudia",
+      "dm:sunny-debugger",
+      "dm:sunny-eva"
+    ]
+  },
+  "role": "master",
+  "poll_interval_seconds": 15
+}

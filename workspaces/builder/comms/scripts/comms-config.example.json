@@ -1,0 +1,13 @@
+{
+  "api_url": "https://agent-comms-api-production-fd99.up.railway.app",
+  "api_key": "${BUS_API_KEY}",
+  "agent_id": "builder",
+  "agent_name": "Builder",
+  "message_bus_url": "https://agent-comms-api-production-fd99.up.railway.app",
+  "channels": {
+    "primary": "dm:sunny-builder",
+    "all": ["dm:sunny-builder"]
+  },
+  "role": "sub-agent",
+  "poll_interval_seconds": 30
+}

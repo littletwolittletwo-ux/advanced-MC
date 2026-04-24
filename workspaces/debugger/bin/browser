@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Debugger's browser — DIAGNOSTIC SCOPE. Interactive for reproduction,
+# observability vendors allowed, higher output cap for HAR/log dumps.
+exec agent-browser \
+  --session debugger \
+  --profile "$HOME/.agent-browser/profiles/debugger" \
+  --allowed-domains "localhost,127.0.0.1,*.vercel.app,*.ngrok.io,*.ngrok-free.app,*.sentry.io,*.datadoghq.com,*.honeycomb.io,*.logtail.com,*.rollbar.com" \
+  --content-boundaries \
+  --max-output 120000 \
+  --action-policy "$HOME/.openclaw/workspace-debugger/reference/browser-policy.json" \
+  "$@"

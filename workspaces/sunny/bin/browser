@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Sunny's browser — AUDITOR MODE. Read-heavy, write-denying by policy.
+# Sunny opens pages, reads content, inspects network, takes screenshots.
+# She does NOT click destructive targets, submit forms, upload files, or eval JS.
+exec agent-browser \
+  --session sunny \
+  --profile "$HOME/.agent-browser/profiles/sunny" \
+  --content-boundaries \
+  --max-output 60000 \
+  --action-policy "$HOME/.openclaw/workspace/reference/browser-policy.json" \
+  "$@"

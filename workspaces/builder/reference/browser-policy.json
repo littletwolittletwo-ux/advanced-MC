@@ -1,0 +1,21 @@
+{
+  "deny_by_default": false,
+  "rules": [
+    { "action": "eval",     "effect": "deny" },
+    { "action": "upload",   "effect": "deny" },
+    { "action": "download", "effect": "deny" },
+
+    { "action": "click", "match": "text=Delete",          "effect": "deny" },
+    { "action": "click", "match": "text=Remove Account",  "effect": "deny" },
+    { "action": "click", "match": "text=Drop",            "effect": "deny" },
+    { "action": "click", "match": "text=Publish",         "effect": "deny" },
+    { "action": "click", "match": "text=Deploy to Prod",  "effect": "deny" },
+    { "action": "click", "match": "text=Deploy Production","effect": "deny" },
+
+    { "action": "click", "match": "text=Pay",             "effect": "deny" },
+    { "action": "click", "match": "text=Buy",             "effect": "deny" },
+    { "action": "click", "match": "text=Charge",          "effect": "deny" },
+    { "action": "click", "match": "text=Withdraw",        "effect": "deny" },
+    { "action": "click", "match": "text=Transfer Funds",  "effect": "deny" }
+  ]
+}

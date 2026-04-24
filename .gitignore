@@ -1,0 +1,52 @@
+# Secrets — NEVER commit
+.env
+.env.*
+*.env
+!.env.example
+**/comms-config.json
+!**/comms-config.example.json
+**/.anthropic_key
+**/secrets/
+**/credentials/
+
+# Runtime state
+*.log
+logs/
+.wake.lock
+.lock
+tmp/
+*.tmp
+*.pid
+
+# OS cruft
+.DS_Store
+Thumbs.db
+._*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backups from our work
+*.backup
+*.bak
+dist-backup-*/
+trial-*/
+bus-audit-*/
+
+# Obsidian noise (in case a vault dir is symlinked in someday)
+.obsidian/workspace*
+.obsidian/cache/
+
+# Dependencies (in case anyone wraps scripts in a node project)
+node_modules/
+.pnpm-store/
+package-lock.json
+pnpm-lock.yaml
+
+# Built output (if anyone adds a build step later)
+dist/
+build/
