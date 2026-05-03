@@ -1,0 +1,5 @@
+anthropic==0.97.0
+patchright==1.59.1
+python-dotenv==1.2.2
+rich==15.0.0
+ipdb==0.13.13

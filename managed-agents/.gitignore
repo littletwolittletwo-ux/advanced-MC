@@ -1,0 +1,9 @@
+.env
+state.json
+.venv/
+vendor/
+screenshots/
+secrets/
+logs/
+__pycache__/
+*.pyc
